@@ -38,11 +38,23 @@
                     justify-content: space-around;
                     align-items: center;
                     .itemImg{
-                        height: 150px;
-                        width: 150px;
-                        border-radius: 50%;
-                        margin-bottom: 20px;
-                        cursor: pointer;
+                        background: url(https://img2.shaadi.com/assests/2020/images/home-icon-sprite.png) no-repeat left 1px;
+                        height: 148px;
+                        width: 133px;
+                        margin: 0 auto;
+                        display: block;
+                        position: relative;
+                        background-size: 100%;
+                    }
+
+                    .step2{
+                        background: url(https://img2.shaadi.com/assests/2020/images/home-icon-sprite.png) no-repeat left -292px;
+                        background-size: 100%;
+                    }
+
+                    .step3{
+                        background: url(https://img2.shaadi.com/assests/2020/images/home-icon-sprite.png) no-repeat left -591px;
+                        background-size: 100%;
                     }
 
                     .link{

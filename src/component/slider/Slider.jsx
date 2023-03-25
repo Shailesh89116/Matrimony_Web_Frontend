@@ -4,7 +4,7 @@ import "./slider.scss"
 const Slider = () => {
   return (
     <div className='slider'>
-      <img src=".\src\assets\pexels-banu-film-ads-12432088.jpg" className="slidePic" />
+      <img src="https://images.pexels.com/photos/3865895/pexels-photo-3865895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="slidePic" />
     </div>
   )
 }
