@@ -1,0 +1,21 @@
+.storyBanner{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+    
+    .wrapper{
+        .top{
+            font-size: 35px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #fc676c;
+        }
+        .bottom{
+            display: flex;
+            gap: 30px;
+        justify-content: space-around;
+        }
+        
+}
+}

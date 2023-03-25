@@ -1,0 +1,46 @@
+.footer{
+    margin-top: 10px;
+   padding: 20px;
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+      
+        .fContainer{
+            width: 20%;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+    
+           
+            .heading{
+                font-size: 14px;
+                text-align: center;
+            }
+    
+            .fList{
+                list-style: none;
+    
+                .fListItem{
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    margin-left: 50px;
+                    cursor: pointer;
+                    color: rgb(171, 171, 171);
+    
+                    &:hover{
+                        color: rgb(97, 97, 97);
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyRight{
+        height: 20px;
+        font-size: 15px;
+        color: #fbbb9b;
+        background-color: #fce7dd97 ;
+        text-align: center;
+    }
+}
