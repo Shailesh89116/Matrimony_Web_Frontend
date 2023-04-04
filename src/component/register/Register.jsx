@@ -1,15 +1,19 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsRegShow } from '../../state mangement/showRegisterReducer';
+import UserCheck from '../userCheck/UserCheck';
 import "./register.scss"
 
 const Register = () => {
     const dispatch = useDispatch();
+
     const {isRegShow} = useSelector(state => state.showRegister);
-    console.log(isRegShow);
+
+    //to close register window
     const close=()=>{
         dispatch(setIsRegShow(!isRegShow))
     }
+
   return (
     <div className={`${isRegShow ? "showReg" : ""} register`}>
         
@@ -17,25 +21,33 @@ const Register = () => {
             <div className="close">
             <span className="closeText" onClick={close}>close</span>
             </div>
-            <div className="reg_form">
-            <div className="reg_top">
-                <p className="reg_logo">Kapol Milan</p>
-                <p className="reg_head">Welcome back! Please reg</p>
+            <div className="regTop">
+                <div className="regLogo"></div>
+            <div className="userSelection">
+                <h1 className="regHeading">This Profile is for</h1>
+               <div className="selectionItem">
+               <UserCheck user="My Self"/>
+               <UserCheck user="My Son"/>
+               <UserCheck user="My Daughter"/>
+               <UserCheck user="My Brother"/>
+               <UserCheck user="My Sister"/>
+               <UserCheck user="My Friend"/>
+               <UserCheck user="Relative"/>
+               </div>
             </div>
-            <div className="reg_center">
-                <div className="reg_field">
-                <p className="reg_Text">Email ID</p>
-                <input type="text" className="reg_input" placeholder='Enter Enail ID'/>
-                </div>
-                <div className="reg_field">
-                <p className="reg_Text">Password</p>
-                <input type="password" className="reg_input" placeholder='Enter Password'/>
-                </div>
-                <p className="forgot">Forgot Password?</p>
-                <button className="reg_btn">Register</button>
+            <div className="genderContainer">
+            <div className="genderHeading">
+                <span className="genderHead">Gender</span>
             </div>
-            <div className="reg_bottom">
-                <p className="bottom_txt">New here? <span className='signUp'>{`Sign Up Free>`}</span></p>
+            <div className="userGender">
+                <div className="gender">
+                    <UserCheck user="Male"/>
+                    <UserCheck user="Female"/>
+                </div>
+            </div>
+            </div>
+            <div className="regContinue">
+            <button className="continue_btn">Continue</button>
             </div>
             </div>
         </div>

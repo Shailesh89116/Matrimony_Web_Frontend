@@ -1,20 +1,28 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsLoginShow } from '../../state mangement/showLoginReducer';
+import { setIsRegShow } from '../../state mangement/showRegisterReducer';
 import "./login.scss"
 
 const Login = () => {
 
     const dispatch = useDispatch();
+
     const {isLoginShow} = useSelector(state => state.showLogin);
-    console.log(isLoginShow);
+
+    //to close login window
     const close=()=>{
-        dispatch(setIsLoginShow(!isLoginShow))
+        dispatch(setIsLoginShow(false))
+    }
+
+    //to close login and open register window
+    const handleReg=()=>{
+        dispatch(setIsLoginShow(false));
+        dispatch(setIsRegShow(true))
     }
     
   return (
     <div className={`${isLoginShow ? "show" : ""} login`}>
-        
         <div className="login_wrapper">
             <div className="close">
             <span className="closeText" onClick={close}>close</span>
@@ -37,7 +45,7 @@ const Login = () => {
                 <button className="login_btn">Login</button>
             </div>
             <div className="login_bottom">
-                <p className="bottom_txt">New here? <span className='signUp'>{`Sign Up Free>`}</span></p>
+                <p className="bottom_txt">New here? <span className='signUp' onClick={handleReg}>{`Sign Up Free>`}</span></p>
             </div>
             </div>
         </div>
