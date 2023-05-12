@@ -42,4 +42,19 @@ export const storyData=[
         name:"Aakash & Riddhi",
         desc: "I am grateful to Shaadi.com for helping me to find the love of my life. Pratiksha's profile on Shaadi.com was so impressive, I couldn't resist myself to send her request. She accepted it and we developed our bond slowly. In a month, me & my family went to see her at her place."
     }
+];
+
+
+export const sliderPictures=[
+    "https://images.pexels.com/photos/11897083/pexels-photo-11897083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    
+    "https://images.pexels.com/photos/3865895/pexels-photo-3865895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+    "https://images.pexels.com/photos/11897083/pexels-photo-11897083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    
+    "https://images.pexels.com/photos/3865895/pexels-photo-3865895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+    "https://images.pexels.com/photos/11897083/pexels-photo-11897083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    
+    "https://images.pexels.com/photos/3865895/pexels-photo-3865895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 ]

@@ -2,6 +2,11 @@ import React from "react";
 import "./banner.scss";
 
 const Banner = () => {
+
+  const clickHandle=()=>{
+    console.log("Clicked");
+  }
+
   return (
     <div className="banner">
       <div className="wrapper">
@@ -10,7 +15,7 @@ const Banner = () => {
           <div className="items">
             <div className="item">
               <span className="itemImg"></span>
-              <p className="link">Sign Up</p>
+              <p className="link" onClick={clickHandle}>Sign Up</p>
               <p className="info">Register for free & put up your Matrimony Profile</p>
             </div>
             <div className="item">
